@@ -1,0 +1,20 @@
+{
+	"name": "ds_parameters",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storagedatalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "adventureworks_config.json",
+				"fileSystem": "parameters"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
